@@ -63,6 +63,5 @@
   </template>
   
   <script setup lang="ts">
-  import { ref } from 'vue'
   import JoinIcon from '../../icons/jion.vue'
   </script>

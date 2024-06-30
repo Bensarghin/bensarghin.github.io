@@ -62,11 +62,7 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import { ref } from 'vue'
-  import { ChevronDownIcon } from '@heroicons/vue/20/solid'
-  import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue'
   import JoinIcon from '../../icons/jion.vue'
-  
-  const agreed = ref(false)
   </script>

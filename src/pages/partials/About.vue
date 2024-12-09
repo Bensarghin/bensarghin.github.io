@@ -12,13 +12,13 @@
                             <PalletteIcon class="w-5 inline"/>
                         </span>
                         <span class="max-w-60 inline-block text-white">
-                            Primary Skills
+                            My Services
                         </span>
                     </h2>
                 </div>
                 <div class="grid grid-cols-2 lg:grid-cols-3 justify-between gap-2 lg:gap-y-3">
                     <div class="w-full mx-auto border border-gray-800 p-8">
-                        <h4 class="text-gray-50 text-center uppercase mb-6">Laravel</h4>
+                        <h4 class="text-gray-50 text-center uppercase mb-6">Web Development</h4>
                         <LaravelIcon class="h-20 text-[#f6362d] w-20 mx-auto border-b border-gray-800"/>
                     </div>
                     <div class="w-full mx-auto border border-gray-800 p-8">
@@ -37,6 +37,10 @@
                         <h4 class="text-gray-50 text-center uppercase mb-6">Github</h4>
                         <GithubIcon class="text-[#193989] h-20 w-20 mx-auto border-b border-gray-800"/>
                     </div>
+                    <div class="w-full mx-auto border border-gray-800 p-8">
+                        <h4 class="text-gray-50 text-center uppercase mb-6">Digital Marketing</h4>
+                        <SeoIcon class="text-[#fbbc05] h-20 w-20 mx-auto border-b border-gray-800"/>
+                    </div>
                 </div>
             </div>
             <div>
@@ -51,7 +55,7 @@
                     </h2>
                 </div>
                 <p>
-                    Hi, I'm Hamid, a passionate and dedicated full-stack web developer from Morocco. With a strong background in both front-end and back-end development, I specialize in creating seamless and dynamic web applications using Laravel and Vue.js.
+                    Hi, I'm Hamid, a Self-Employed passionate full-stack web developer from Morocco. With a strong background in both front-end and back-end development, I specialize in creating seamless and dynamic web applications using Laravel and Vue.js.
                 </p>
                 <h3 class="text-xl font-medium text-white uppercase leading-normal mb-4 mt-10">Professional Background</h3>
                 <p>
@@ -81,11 +85,12 @@ import CodeIcon from '../../icons/code.vue';
 import GitIcon from '../../icons/git.vue';
 import GithubIcon from '../../icons/github.vue';
 import PalletteIcon from '../../icons/pallette.vue';
+import SeoIcon from '../../icons/seo.vue';
 
 const stats = [
-  { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-  { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-  { id: 3, name: 'New users annually', value: '46,000' },
+  { id: 1, name: 'More than 10 satisfied customers', value: '10+ Customers' },
+  { id: 2, name: 'More than 10 developed businesses', value: '10+ Projects' },
+  { id: 3, name: 'Quality guaranted', value: 'Quality' },
 ]
 </script>
 

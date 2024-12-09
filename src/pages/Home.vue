@@ -3,20 +3,20 @@
         <div class="lg:grid lg:grid-cols-2 justify-between">
             <div class="mx-auto">
                 <h1 class="text-4xl lg:text-6xl font-medium uppercase leading-normal">Transforming <br>Ideas into </h1>
-                <h2 class="text-4xl lg:text-6xl font-medium uppercase leading-normal text-third mb-7">Web Solutions!</h2>
+                <h2 class="text-4xl lg:text-6xl font-medium uppercase leading-normal text-third mb-7">Digital Experiences!</h2>
                 <div class="lg:flex justify-between uppercase text-sm lg:mb-0 mb-6 gap-8 border-t border-b border-gray-800 mx-auto bg-gradient-to-r from-[#2d3345] to-[#141720] py-5 px-8">
                     <div class="mb-4">
                         <p>
-                           200+ angel investors
+                            Helping Businesses Unlock Digital Potential
                         </p>
-                        <p class="text-gray-400">deadline 27th apr</p> 
+                        <p class="text-gray-400">with Tailored Solutions!</p> 
                     </div>
                     <div>
                         <p>
-                            accelerate your startup 
+                            Transform Your Business Today
                         </p>
                         <p>
-                            <a href="" class="text-secondary border-b border-secondary">hire me</a> for winter batch
+                            <a href="" class="text-secondary border-b border-secondary">Start</a> your First Step!
                         </p>
                     </div>
                 </div>

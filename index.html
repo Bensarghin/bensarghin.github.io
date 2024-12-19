@@ -3,27 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAMID BENSARGHIN</title>
+    <title>HAMID BENSARGHIN - Web Développeur</title>
+    <meta name="description" content="" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets//favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets//site.webmanifest" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hamid Bensarghin",
+        "description": "We provide quality solar panel installation services in Georgetown",
+        "logo": "https://www.hamidbensarghin.com/logo.svg",
+        "url": "https://www.hamidbensarghin.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lot El Khadra 107",
+          "addressLocality": "Larache",
+          "addressRegion": "Tanger",
+          "postalCode": "92000",
+          "addressCountry": "MA"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Service",
+        "serviceType": "Digital services",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Hamid bensarghin | Self-Employee"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Services",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Web Development"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Business Designs"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Digital Marketing",
+              "itemListElement": [
+                {
+                  "@type": "OfferCatalog",
+                  "name": "SEO"
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Social Media Compaigns"
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Social Media"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body class="bg-secondary">
     <!-- header section start-->
     <header>
       <nav
-        class="mb-28 border-b-[2px] border-[#dfdfdf] lg:px-8"
+        class="lg:mb-28 mb-10 border-b-[2px] border-[#dfdfdf] px-4 lg:px-8"
         aria-label="Global"
       >
         <div class="flex items-center py-2.5 container mx-auto justify-between">
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5">
-              <img class="h-14 w-auto" src="./assets/images/logo.svg" alt="" />
+              <img class="h-14 w-auto" src="./assets/logo.svg" alt="" />
             </a>
           </div>
           <div class="flex lg:hidden">
             <button
               type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              class="open -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             >
               <span class="sr-only">Open main menu</span>
               <svg
@@ -45,30 +126,35 @@
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
             <a
-              href="#"
-              class="font-medium tracking-wide capitalize text-[16px] text-gray"
-              >product</a
+              href="pages/about.html"
+              class="tracking-wide text-primary uppercase text-[13px] font-semibold"
+              >home</a
             >
             <a
-              href="#"
-              class="font-medium tracking-wide capitalize text-[16px] text-gray"
-              >features</a
+              href="pages/about.html"
+              class="tracking-wide transition hover:text-primary uppercase text-[13px] font-semibold text-gray"
+              >about</a
             >
             <a
-              href="#"
-              class="font-medium tracking-wide capitalize text-[16px] text-gray"
-              >marketplace</a
+              href="#projects"
+              class="tracking-wide transition hover:text-primary uppercase text-[13px] font-semibold text-gray"
+              >projects</a
             >
             <a
-              href="#"
-              class="font-medium tracking-wide capitalize text-[16px] text-gray"
-              >company</a
+              href="#services"
+              class="tracking-wide transition hover:text-primary uppercase text-[13px] font-semibold text-gray"
+              >services</a
+            >
+            <a
+              href="#contact"
+              class="tracking-wide transition hover:text-primary uppercase text-[13px] font-semibold text-gray"
+              >contact</a
             >
           </div>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
+      <div class="lg:hidden hidden mobile-nav" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-50"></div>
         <div
@@ -79,11 +165,11 @@
               <span class="sr-only">Your Company</span>
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                src="./assets/logo.svg"
                 alt=""
               />
             </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <button type="button" class="close -m-2.5 rounded-md p-2.5 text-gray-700">
               <span class="sr-only">Close menu</span>
               <svg
                 class="size-6"
@@ -106,63 +192,61 @@
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="pages/about.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Product</a
+                  >home</a
                 >
                 <a
-                  href="#"
+                  href="pages/about.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Features</a
+                  >about</a
                 >
                 <a
-                  href="#"
+                  href="#projects"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a
+                  >projects</a
                 >
                 <a
-                  href="#"
+                  href="#services"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Company</a
+                  >services</a
                 >
-              </div>
-              <div class="py-6">
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Log in</a
+                  href="#contact"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >contact</a
                 >
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero-section container mx-auto">
+      <div class="hero-section px-4 container mx-auto">
         <h1
-          class="text-[85px] uppercase leading-tight mb-10 text-black font-bold"
+          class="text-[35px] lg:text-[85px] uppercase leading-tight mb-10 text-black font-bold"
         >
           Grow Your <br /><span class="stroke">Business</span> Online,
           <br />Affordably!
         </h1>
-        <div class="flex justify-between items-start gap-14">
+        <div class="lg:flex justify-between items-start gap-14">
           <div class="max-w-md">
             <p>
               Affordable digital solutions tailored for Moroccan businesses.
               From websites to marketing, we make growing online simple and
               within your budget.
             </p>
-            <div class="flex my-10 gap-4">
+            <div class="lg:flex my-10 gap-4">
               <div>
                 <a
-                  href=""
-                  class="w-48 text-center text-white mb-3 py-2.5 inline-block font-semibold rounded-lg bg-none border-[2px] border-primary bg-primary"
+                  href="#projects"
+                  class="w-48 text-center transition hover:bg-blue hover:border-blue text-white mb-3 py-2.5 inline-block font-semibold rounded-lg bg-none border-[2px] border-primary bg-primary"
                   >View My Work</a
                 >
               </div>
               <div>
                 <a
-                  href=""
-                  class="w-48 text-center py-2.5 inline-block font-semibold rounded-lg bg-none border-[2px] border-[#1d1d1d]"
+                  href="#contact"
+                  class="w-48 text-center transition py-2.5 hover:bg-black hover:text-white inline-block font-semibold rounded-lg bg-none border-[2px] border-[#1d1d1d]"
                   >Let’s Work Together</a
                 >
               </div>
@@ -171,7 +255,7 @@
           <div>
             <img
               src="./assets/images/cover.png"
-              class="max-w-6xl h-auto"
+              class="w-auto lg:max-w-3xl 2xl:max-w-6xl h-auto"
               alt=""
             />
           </div>
@@ -181,23 +265,23 @@
 
     <!-- content section start  -->
     <div class="content mt-24">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4">
         <!-- Selected projects  -->
-        <div class="projects">
+        <div id="projects" class="projects">
           <h6
             class="uppercase border font-medium rounded-full py-3 px-5 inline-block text-center mb-4"
           >
             Selected Projects
           </h6>
-          <h2 class="text-[45px] leading-[48px] mb-32 font-semibold max-w-lg">
+          <h2 class="lg:text-[45px] text-[28px] lg:leading-[48px] leading-[30px] mb-10 lg:mb-32 font-semibold max-w-lg">
             Highlighting Success: A Showcase of My Best Work
           </h2>
-          <div class="flex gap-28 mb-20 items-start justify-start">
+          <div class="lg:flex gap-28 mb-20 items-start justify-start">
             <div class="max-w-screen-sm">
               <img src="assets/images/projects/3.png" alt="" />
             </div>
             <div>
-              <h3 class="mb-10 font-medium uppercase text-[38px]">armagic</h3>
+              <h3 class="mb-10 font-medium uppercase lg:text-[38px] text-[28px]">armagic</h3>
               <div class="flex gap-3 items-center mb-5">
                 <div>
                   <div class="w-12">
@@ -253,14 +337,18 @@
               </a>
             </div>
           </div>
-          <div class="flex gap-12 mb-20 items-start justify-end">
-            <div>
-              <h3 class="mb-10 font-medium uppercase text-[38px]">
+          <div class="lg:flex gap-12 mb-20 items-start justify-end">
+            
+            <div class="order-last max-w-screen-sm">
+              <img src="assets/images/projects/2.png" alt="" />
+            </div>
+            <div class="order-first">
+              <h3 class="mb-10 font-medium uppercase lg:text-[38px] text-[28px]">
                 Smartstarrentcar
               </h3>
               <div class="flex gap-3 items-center mb-5">
                 <div>
-                  <div class="w-12">
+                  <div class="w-12 ">
                     <img
                       src="https://uithemez.com/i/geekfolio/light/assets/imgs/serv-icons/0.png"
                       alt=""
@@ -312,16 +400,13 @@
                 </span>
               </a>
             </div>
-            <div class="max-w-screen-sm">
-              <img src="assets/images/projects/2.png" alt="" />
-            </div>
           </div>
-          <div class="flex gap-28 mb-20 items-start justify-start">
+          <div class="lg:flex gap-28 mb-20 items-start justify-start">
             <div class="max-w-screen-sm">
               <img src="assets/images/projects/1.png" alt="" />
             </div>
             <div>
-              <h3 class="mb-10 font-medium uppercase text-[38px]">
+              <h3 class="mb-10 font-medium uppercase lg:text-[38px] text-[28px]">
                 svtmousstaid
               </h3>
 
@@ -382,8 +467,8 @@
           </div>
         </div>
         <!-- Our services  -->
-        <div class="services mt-28 mb-28">
-          <div class="grid grid-cols-2 justify-between items-center">
+        <div id="services" class="services mt-28 mb-28">
+          <div class="lg:grid lg:grid-cols-2 justify-between items-center">
             <div>
               <h6
                 class="uppercase border font-medium rounded-full py-3 px-5 inline-block text-center mb-4"
@@ -391,12 +476,12 @@
                 Featured Services
               </h6>
               <h2
-                class="text-[45px] leading-[48px] mb-32 font-semibold max-w-lg"
+                class="lg:text-[45px] text-[28px] lg:leading-[48px] leading-[30px] mb-4 lg:mb-32 font-semibold max-w-lg"
               >
                 Our Services
               </h2>
             </div>
-            <div class="max-w-sm">
+            <div class="max-w-sm mb-20 lg:mb-0">
               <p>
                 Through our years of experience, we’ve also learned that while
                 each channel has its own set of advantages, they all work best
@@ -408,9 +493,9 @@
               </a>
             </div>
           </div>
-          <div class="grid grid-cols-3 gap-6 justify-between items-center">
-            <div class="border p-14 rounded border-[#0000001a]">
-              <div class="mb-10 w-12">
+          <div class="lg:grid lg:grid-cols-3 gap-6 justify-between items-center">
+            <div class="border p-7 lg:p-14 lg:mb-0 mb-5 rounded border-[#0000001a]">
+              <div class="mb-10 h-12 w-12">
                 <img src="./assets/images/services/1.png" alt="" />
               </div>
               <span class="mb-3 opacity-70">Stores & Sales</span>
@@ -440,8 +525,8 @@
                 </a>
               </div>
             </div>
-            <div class="border p-14 rounded border-[#0000001a]">
-              <div class="mb-10 w-12">
+            <div class="border p-7 lg:p-14 lg:mb-0 mb-5 rounded border-[#0000001a]">
+              <div class="mb-10 h-12 w-12">
                 <img src="./assets/images/services/2.png" alt="" />
               </div>
               <span class="mb-3 opacity-70">Social Media</span>
@@ -471,8 +556,8 @@
                 </a>
               </div>
             </div>
-            <div class="border p-14 rounded border-[#0000001a]">
-              <div class="mb-10 w-12">
+            <div class="border p-7 lg:p-14 rounded border-[#0000001a]">
+              <div class="mb-10 h-12 w-12">
                 <img src="./assets/images/services/3.png" alt="" />
               </div>
               <span class="mb-3 opacity-70">Web development</span>
@@ -516,18 +601,18 @@
             </h6>
             <br />
             <h2
-              class="text-[45px] inline-block leading-[48px] mb-32 font-semibold max-w-lg"
+              class="text-[45px] inline-block leading-[48px] mb-12 lg:mb-32 font-semibold max-w-lg"
             >
               What People Says?
             </h2>
           </div>
-          <div class="flex justify-center mx-auto items-center">
-            <div class="relative mr-40">
+          <div class="lg:flex justify-center px-4 mx-auto items-center">
+            <div class="relative mb-7 lg:mb-0 mr-40">
               <div
-                class="border border-[#00000080] justify-center flex w-[300px] h-[300px] rounded-[50%] overflow-hidden items-center"
+                class="border border-[#00000080] justify-center flex w-[130px] h-[130px] lg:w-[300px] lg:h-[300px] rounded-[50%] overflow-hidden items-center"
               >
                 <div
-                  class="w-[140px] h-[140px] rounded-[50%] p-10 z-40 relative bg-[#f1f3f5]"
+                  class="lg:w-[140px] w-[100px] h-[100px] lg:h-[140px] rounded-[50%] p-6 lg:p-10 z-40 relative bg-[#f1f3f5]"
                 >
                   <img
                     src="https://uithemez.com/i/geekfolio/light/assets/imgs/svg-assets/quote.png"
@@ -536,7 +621,7 @@
                 </div>
               </div>
               <div
-                class="absolute w-[300px] h-[300px] rounded-[50%] overflow-hidden top-0 left-2/4"
+                class="lg:absolute hidden lg:block w-[300px] h-[300px] rounded-[50%] overflow-hidden top-0 left-2/4"
               >
                 <img
                   src="https://uithemez.com/i/geekfolio/light/assets/imgs/about/sq1.jpg"
@@ -545,8 +630,8 @@
               </div>
             </div>
             <!-- testimonials list -->
-            <section class="bg-gray-100 max-w-2xl">
-              <div class="max-w-6xl mx-auto px-6">
+            <section class="bg-gray-100 lg:max-w-2xl">
+              <div class="lg:max-w-6xl mx-auto lg:px-6">
                 <div class="relative overflow-hidden">
                   <div
                     id="testimonial-slider"
@@ -554,7 +639,7 @@
                   >
                     <!-- Testimonial 1 -->
                     <div class="w-full flex-shrink-0 px-4">
-                      <div class="p-6">
+                      <div class="lg:p-6">
                         <p class="text-black text-2xl font-medium">
                           "This service is outstanding! It has completely
                           transformed our business operations. Highly
@@ -652,28 +737,31 @@
                 </div>
               </div>
             </section>
-            <hr />
-            <div class="border-t"></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- contact section start  -->
-    <div id="contact" class="container mx-auto my-28">
-      <div class="flex justify-center items-start gap-x-20">
+    <div id="contact" class="container px-4 mx-auto my-28">
+      <div class="lg:flex justify-center items-start gap-x-20">
         <div>
           <h6
             class="uppercase border font-medium rounded-full py-3 px-5 inline-block text-center mb-4"
           >
             Contact me
           </h6>
-          <h2 class="text-[45px] leading-[48px] mb-4 font-semibold max-w-lg">
+          <h2 class="lg:text-[45px] text-[28px] lg:leading-[48px] leading-[30px] mb-4 font-semibold max-w-lg">
             Got an idea for a project? Let's bring it to life!
           </h2>
-          <p class="mb-10 max-w-md">If you would like to work with us or just want to get in touch, we’d love to hear from you!</p>
-          <a href="" class="text-3xl font-semibold mb-10 block">+2127 5187 2025</a>
-          <div class="flex gap-10">
+          <p class="mb-10 max-w-md">
+            If you would like to work with us or just want to get in touch, we’d
+            love to hear from you!
+          </p>
+          <a href="" class="text-3xl font-semibold mb-10 block"
+            >+2127 5187 2025</a
+          >
+          <div class="flex gap-10 mb-20">
             <a href="">Instagram</a>
             <a href="">Linkedin</a>
             <a href="">Facebook</a>
@@ -759,7 +847,9 @@
                       class="response bg-green-100 border bg-white border-green-400 text-green-700 px-4 py-3 rounded fixed bottom-4 right-4 shadow-lg"
                       id="mce-success-response"
                       style="display: none"
-                    >Thank you for text me I will be touch with you soon!</div>
+                    >
+                      Thank you for text me I will be touch with you soon!
+                    </div>
                   </div>
                   <div
                     aria-hidden="true"
@@ -782,7 +872,7 @@
                         id="mc-embedded-subscribe"
                         class="button"
                       >
-                      Send Now
+                        Send Now
                       </button>
                     </div>
                   </div>
@@ -793,13 +883,13 @@
         </div>
       </div>
     </div>
-    <footer class="bg-white py-9 border-t border-[#0000001a]">
+    <footer class="bg-white px-4 py-9 border-t border-[#0000001a]">
       <div class="container mx-auto flex items-center justify-between">
-        <img src="./assets/images/logo.png" class="h-16 w-auto" alt="">
-        <p class="fz-13">© 2025 hamid bensarghin </p>
+        <img src="./assets/images/logo.png" class="h-16 w-auto" alt="" />
+        <p class="fz-13">© 2025 hamid bensarghin</p>
       </div>
     </footer>
-    
+
     <script
       type="text/javascript"
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
@@ -828,7 +918,6 @@
         updateSlider();
       });
 
-      
       (function ($) {
         window.fnames = new Array();
         window.ftypes = new Array();
@@ -850,14 +939,13 @@
       var $mcj = jQuery.noConflict(true);
 
       function showToast() {
-        const toast = document.getElementById('mce-success-response');
-        toast.style.display = 'block';
+        const toast = document.getElementById("mce-success-response");
+        toast.style.display = "block";
         setTimeout(() => {
-          toast.style.display = 'none';
+          toast.style.display = "none";
         }, 4000);
       }
-
-      showToast();
     </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

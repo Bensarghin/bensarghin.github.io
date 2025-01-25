@@ -29,7 +29,7 @@ if (openButton) {
 
 
 // Select all links with hashes (e.g., #section-id)
-const links = document.querySelectorAll('.tracking-wide');
+const links = document.querySelectorAll('.scroll-smooth');
 
 // Function to handle smooth scrolling
 const smoothScroll = (event) => {

@@ -87,12 +87,68 @@
         }
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What services do you offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I specialize in full-stack web development, offering services such as showcase websites, e-commerce platforms, and custom web applications to help businesses grow online."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to develop a website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The development timeline depends on the complexity of the project. A simple showcase website may take 1-2 weeks, while a custom web application can take several weeks or months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide SEO-optimized websites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! I build websites with SEO best practices, ensuring fast loading speeds, mobile responsiveness, and structured content to help improve search rankings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I update my website content myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! I can integrate a user-friendly CMS, allowing you to update text, images, and other content without technical knowledge."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What technologies do you use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I work with modern technologies including Laravel, Vue.js, Next.js, Node.js, and more to build secure and scalable web solutions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I get a quote for my project?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can contact me via my website by filling out the inquiry form or reaching out directly through email or WhatsApp. I'll analyze your requirements and provide a free quote."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-secondary">
     <!-- header section start-->
     <header>
       <nav
-        class="lg:mb-28 mb-10 border-b-[2px] border-[#dfdfdf] px-4 lg:px-8"
+        class="lg:mb-28 mb-10 px-4 lg:px-8"
         aria-label="Global"
       >
         <div class="flex items-center py-2.5 container mx-auto justify-between">
@@ -126,13 +182,13 @@
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
             <a
-              href="pages/about.html"
-              class="tracking-wide scroll-smooth text-primary uppercase text-[13px] font-semibold"
+              href="/index.html"
+              class="tracking-wide text-primary uppercase text-[13px] font-semibold"
               >home</a
             >
             <a
-              href="pages/about.html"
-              class="tracking-wide scroll-smooth transition hover:text-primary uppercase text-[13px] font-semibold text-gray"
+              href="/pages/about.html"
+              class="tracking-wide transition hover:text-primary uppercase text-[13px] font-semibold text-gray"
               >about</a
             >
             <a
@@ -221,7 +277,7 @@
         </div>
       </div>
       <!-- Hero Section -->
-      <div class="hero-section px-4 container mx-auto">
+      <div class="hero-section relative px-4 container mx-auto">
         <!-- <h1
           class="text-[35px] lg:text-[85px] uppercase leading-tight mb-10 text-black font-bold"
         >
@@ -229,12 +285,12 @@
           <br />Affordably!
         </h1> -->
         <h1
-          class="text-[35px] lg:text-[85px] uppercase leading-tight mb-10 text-black font-bold"
+          class="text-[35px] stroke lg:text-[85px] uppercase leading-tight mb-10 text-primary font-bold"
         >
-          Build Your <br /><span class="stroke">Website</span> Today,
-          <br />Boost Your Business!
+          Build Your <br /><span class="stroke-none text-primary">Website</span> Today,
+          <br />Boost Your <br>Business!
         </h1>
-        <div class="lg:flex justify-between items-start gap-14">
+        <div class="justify-between items-start gap-14">
           <div class="max-w-md">
             <p>
               Empower your business with professional and affordable websites
@@ -258,10 +314,10 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="absolute right-0 bottom-1/4  xl:block hidden">
             <img
-              src="./assets/images/cover.png"
-              class="w-auto lg:max-w-3xl 2xl:max-w-6xl h-auto"
+              src="./assets/images/cover2.svg"
+              class="xl:max-w-2xl 2xl:max-w-3xl h-auto"
               alt="Website Design for Businesses"
             />
           </div>
@@ -298,37 +354,43 @@
                 <div>
                   <div class="w-12">
                     <img
-                    src="./assets/images/8.png"
+                      src="./assets/images/8.png"
                       alt="fix and upgrade website"
                     />
                   </div>
                 </div>
                 <div class="cont ml-7">
-                  <h6 class="text-lg mb-1 font-medium">Fixes and Enhancements</h6>
+                  <h6 class="text-lg mb-1 font-medium">
+                    Fixes and Enhancements
+                  </h6>
                   <p class="max-w-sm">
-                    Delivered crucial upgrades and fixes for Armagic.app, a platform specializing in creating 3D business presentations. Tasks included refining platform functionality, fixing bugs, and enhancing overall performance.
+                    Delivered crucial upgrades and fixes for Armagic.app, a
+                    platform specializing in creating 3D business presentations.
+                    Tasks included refining platform functionality, fixing bugs,
+                    and enhancing overall performance.
                   </p>
                 </div>
               </div>
               <div class="flex gap-3 items-center mb-5">
                 <div>
                   <div class="w-12">
-                    <img
-                      src="./assets/images/9.png"
-                      alt=""
-                    />
+                    <img src="./assets/images/9.png" alt="" />
                   </div>
                 </div>
                 <div class="cont ml-7">
-                  <h6 class="text-lg mb-1 font-medium">New Features Implementation</h6>
+                  <h6 class="text-lg mb-1 font-medium">
+                    New Features Implementation
+                  </h6>
                   <p class="max-w-sm">
-                    Added features like a label creation tool for resellers, an intuitive guide section for platform users, and a robust authentication system to ensure secure access for all users.
+                    Added features like a label creation tool for resellers, an
+                    intuitive guide section for platform users, and a robust
+                    authentication system to ensure secure access for all users.
                   </p>
                 </div>
               </div>
               <a
                 class="ms-10 mt-20 text-primary flex case-study-link relative gap-4 items-center"
-                href="blog-classic.html"
+                href="./pages/case-study/armagic.html"
                 >View Case Study
                 <span>
                   <svg
@@ -367,9 +429,14 @@
                   </div>
                 </div>
                 <div class="cont ml-7">
-                  <h6 class="text-lg mb-1 font-medium">Streamlined Rental Operations</h6>
+                  <h6 class="text-lg mb-1 font-medium">
+                    Streamlined Rental Operations
+                  </h6>
                   <p class="max-w-sm">
-                    A powerful web application tailored to simplify car rental processes. It allows agencies to manage reservations, monitor vehicle availability, and track car maintenance schedules efficiently.
+                    A powerful web application tailored to simplify car rental
+                    processes. It allows agencies to manage reservations,
+                    monitor vehicle availability, and track car maintenance
+                    schedules efficiently.
                   </p>
                 </div>
               </div>
@@ -385,13 +452,16 @@
                 <div class="cont ml-7">
                   <h6 class="text-lg mb-1 font-medium">Real-Time Insights</h6>
                   <p class="max-w-sm">
-                    Equipped with detailed analytics dashboards, the system provides rental agencies with valuable insights into customer behavior, revenue trends, and fleet utilization to optimize operations.
+                    Equipped with detailed analytics dashboards, the system
+                    provides rental agencies with valuable insights into
+                    customer behavior, revenue trends, and fleet utilization to
+                    optimize operations.
                   </p>
                 </div>
               </div>
               <a
                 class="ms-10 mt-20 text-primary flex case-study-link relative gap-4 items-center"
-                href="blog-classic.html"
+                href="./pages/case-study/smartstarentcar.html"
                 >View Case Study
                 <span>
                   <svg
@@ -424,38 +494,42 @@
               <div class="flex gap-3 items-center mb-5">
                 <div>
                   <div class="w-12">
-                    <img
-                    src="./assets/images/6.png"
-                      alt=""
-                    />
+                    <img src="./assets/images/6.png" alt="" />
                   </div>
                 </div>
                 <div class="cont ml-7">
-                  <h6 class="text-lg mb-1 font-medium">Tailored for Educators</h6>
+                  <h6 class="text-lg mb-1 font-medium">
+                    Tailored for Educators
+                  </h6>
                   <p class="max-w-sm">
-                    A customized platform built for a dedicated high school professor to share courses, exercises, and quizzes with students. Simplifies teaching by providing tools for organizing and distributing learning materials efficiently.
+                    A customized platform built for a dedicated high school
+                    professor to share courses, exercises, and quizzes with
+                    students. Simplifies teaching by providing tools for
+                    organizing and distributing learning materials efficiently.
                   </p>
                 </div>
               </div>
               <div class="flex gap-3 items-center mb-5">
                 <div>
                   <div class="w-12">
-                    <img
-                      src="./assets/images/7.png"
-                      alt=""
-                    />
+                    <img src="./assets/images/7.png" alt="" />
                   </div>
                 </div>
                 <div class="cont ml-7">
-                  <h6 class="text-lg mb-1 font-medium">Engaging and Interactive Tools</h6>
+                  <h6 class="text-lg mb-1 font-medium">
+                    Engaging and Interactive Tools
+                  </h6>
                   <p class="max-w-sm">
-                    Includes video lessons, live classroom features, and automated quiz evaluations, enabling the professor to deliver an engaging and interactive learning experience for students.
+                    Includes video lessons, live classroom features, and
+                    automated quiz evaluations, enabling the professor to
+                    deliver an engaging and interactive learning experience for
+                    students.
                   </p>
                 </div>
               </div>
               <a
                 class="ms-10 mt-20 text-primary flex case-study-link relative gap-4 items-center"
-                href="blog-classic.html"
+                href="./pages/case-study/svtmousstaid.html"
                 >View Case Study
                 <span>
                   <svg
@@ -505,51 +579,19 @@
           <div
             class="lg:grid lg:grid-cols-3 gap-6 justify-between items-center"
           >
-          <div
-            class="border p-7 lg:p-14 lg:mb-0 mb-5 rounded border-[#0000001a]"
-          >
-            <div class="mb-10 h-12 w-12">
-              <img src="./assets/images/services/2.png" alt="" />
-            </div>
-            <span class="mb-3 opacity-70">Landing Pages</span>
-            <h6 class="mb-4 font-medium text-black text-lg">
-              Drive Conversions for Your Campaigns
-            </h6>
-            <p>
-              Single-page websites optimized for local campaigns. Perfect for promotions, product launches, or collecting customer leads.
-            </p>
-            <div class="mt-8">
-              <a
-                href="page-services.html"
-                class="relative border border-[#0000000d] rounded-3xl text-left w-full block pl-4 py-3 uppercase hover:bg-primary transition-all eas"
-                >Read More<svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="border-[#0000001a] rounded-full border w-12 h-12 p-4 absolute -top-0 right-0"
-                >
-                  <path
-                    d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
             <div
               class="border p-7 lg:p-14 lg:mb-0 mb-5 rounded border-[#0000001a]"
             >
               <div class="mb-10 h-12 w-12">
-                <img src="./assets/images/services/1.png" alt="" />
+                <img src="./assets/images/services/2.png" alt="" />
               </div>
-              <span class="mb-3 opacity-70">Booking Systems</span>
+              <span class="mb-3 opacity-70">Landing Pages</span>
               <h6 class="mb-4 font-medium text-black text-lg">
-                Streamline Reservations for Any Business
+                Drive Conversions for Your Campaigns
               </h6>
               <p>
-                Custom booking platforms for salons, restaurants, and agencies. Features include online reservations.
+                Single-page websites optimized for local campaigns. Perfect for
+                promotions, product launches, or collecting customer leads.
               </p>
               <div class="mt-8">
                 <a
@@ -571,8 +613,41 @@
                 </a>
               </div>
             </div>
-            <div 
-            class="border p-7 lg:p-14 rounded border-[#0000001a]">
+            <div
+              class="border p-7 lg:p-14 lg:mb-0 mb-5 rounded border-[#0000001a]"
+            >
+              <div class="mb-10 h-12 w-12">
+                <img src="./assets/images/services/1.png" alt="" />
+              </div>
+              <span class="mb-3 opacity-70">Booking Systems</span>
+              <h6 class="mb-4 font-medium text-black text-lg">
+                Streamline Reservations for Any Business
+              </h6>
+              <p>
+                Custom booking platforms for salons, restaurants, and agencies.
+                Features include online reservations.
+              </p>
+              <div class="mt-8">
+                <a
+                  href="page-services.html"
+                  class="relative border border-[#0000000d] rounded-3xl text-left w-full block pl-4 py-3 uppercase hover:bg-primary transition-all eas"
+                  >Read More<svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="border-[#0000001a] rounded-full border w-12 h-12 p-4 absolute -top-0 right-0"
+                  >
+                    <path
+                      d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="border p-7 lg:p-14 rounded border-[#0000001a]">
               <div class="mb-10 h-12 w-12">
                 <img src="./assets/images/services/3.png" alt="" />
               </div>
@@ -581,7 +656,9 @@
                 Manage Customer Data with Ease
               </h6>
               <p>
-                Affordable tools for tracking leads, managing customers, and automating tasks. Improve your sales and customer retention today.
+                Affordable tools for tracking leads, managing customers, and
+                automating tasks. Improve your sales and customer retention
+                today.
               </p>
               <div class="mt-8">
                 <a
@@ -901,13 +978,7 @@
         </div>
       </div>
     </div>
-    <footer class="bg-white px-4 py-9 border-t border-[#0000001a]">
-      <div class="container mx-auto flex items-center justify-between">
-        <img src="./assets/images/logo.png" class="h-16 w-auto" alt="" />
-        <p class="fz-13">© 2025 hamid bensarghin</p>
-      </div>
-    </footer>
-
+    <footer-layout></footer-layout>
     <script
       type="text/javascript"
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
@@ -964,6 +1035,7 @@
         }, 4000);
       }
     </script>
+    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
